@@ -73,7 +73,6 @@ class CollectionsTest {
             new Character[]{'a', 'b'});
 
         List<Character> distinct = new DistinctIterable<>(characters).toList();
-        System.out.print(distinct);
         distinct.sort(Character::compareTo);
 
         assertIterableEquals(Arrays.asList('a', 'b'), distinct);
